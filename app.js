@@ -33,7 +33,7 @@ app.use(express.static('public'));
 // home page or home route
 app.get('/', (req, res) => {
 
-  // set active for navigation
+  // set active for navigation 
   state={home:true}
   // set specifics for <head>
   head={title: "Home - Week 1"}
@@ -44,13 +44,23 @@ app.get('/', (req, res) => {
 
 });
 
-// contact route
-// app.get('/contact', (req, res) => {
-//     state={contact : true}
-//     head={title:"Contact - Week 1"}
-//     res.render('contact', { state, head});
-//     console.log('contact')
-//   });
+app.get('/about', (req, res) => {
+  const state = { about: true };
+  const head = { title: 'About - Week 1' };
+  res.render('about', { state, head });
+});
+
+app.get('/global', (req, res) => {
+  const state = { global: true };
+  const head = { title: 'Global - Week 1' };
+  res.render('global', { state, head });
+});
+
+app.get('/rankings', (req, res) => {
+  const state = { rankings: true };
+  const head = { title: 'Rankings - Week 1' };
+  res.render('rankings', { state, head });
+});
 
 
 // Start the server
