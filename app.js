@@ -67,9 +67,10 @@ app.get('/rankings', (req, res) => {
 
 // responsive example route
 app.get('/responsiveexample', (req, res) => {
-  const state = { responsive: true };
-  const head = { title: 'Responsive Example - AniRank' };
+   state = { responsive: true };
+   head = { title: 'Responsive Example' };
   res.render('responsiveexample', { state, head });
+  console.log('responsiveexample')
 });
 
 
