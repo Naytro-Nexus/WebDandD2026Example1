@@ -23,7 +23,7 @@ app.engine(
 // set the view engine to handlesbards
 app.set('view engine', 'hbs');
 // where to find all of the view
-app.set('views',  'views');
+app.set('views', 'views');
 
 
 // where to find static files - css, images, js
@@ -34,31 +34,31 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
 
   // set active for navigation 
-  state={home:true}
+  state = { home: true }
   // set specifics for <head>
-  head={title: "Home - Week 1"}
+  head = { title: "Home - Week 1" }
   // pass object to to render in "index"
-  res.render('index', {state, head});
+  res.render('index', { state, head });
   // send this to terminal where node app is running
   console.log('home')
 
 });
 
 app.get('/about', (req, res) => {
-  const state = { about: true };
-  const head = { title: 'About - Week 1' };
+  state = { about: true };
+  head = { title: 'About - Week 1' };
   res.render('about', { state, head });
 });
 
 app.get('/global', (req, res) => {
-  const state = { global: true };
-  const head = { title: 'Global - Week 1' };
+  state = { global: true };
+  head = { title: 'Global - Week 1' };
   res.render('global', { state, head });
 });
 
 app.get('/rankings', (req, res) => {
-  const state = { rankings: true };
-  const head = { title: 'Rankings - Week 1' };
+  state = { rankings: true };
+  head = { title: 'Rankings - Week 1' };
   res.render('rankings', { state, head });
 });
 
