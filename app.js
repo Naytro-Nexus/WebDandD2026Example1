@@ -45,12 +45,12 @@ app.get('/', (req, res) => {
 });
 
 // contact route
-app.get('/contact', (req, res) => {
-    state={contact : true}
-    head={title:"Contact - Week 1"}
-    res.render('contact', { state, head});
-    console.log('contact')
-  });
+// app.get('/contact', (req, res) => {
+//     state={contact : true}
+//     head={title:"Contact - Week 1"}
+//     res.render('contact', { state, head});
+//     console.log('contact')
+//   });
 
 
 // Start the server
