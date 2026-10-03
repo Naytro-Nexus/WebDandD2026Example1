@@ -46,20 +46,23 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   state = { about: true };
-  head = { title: 'About - Week 1' };
+  head = { title: 'About' };
   res.render('about', { state, head });
+  console.log('about')
 });
 
 app.get('/global', (req, res) => {
   state = { global: true };
-  head = { title: 'Global - Week 1' };
+  head = { title: 'Global' };
   res.render('global', { state, head });
+  console.log('global')
 });
 
 app.get('/rankings', (req, res) => {
   state = { rankings: true };
-  head = { title: 'Rankings - Week 1' };
+  head = { title: 'Rankings' };
   res.render('rankings', { state, head });
+  console.log('rankings')
 });
 
 
