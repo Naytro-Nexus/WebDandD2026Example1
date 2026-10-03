@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
   // set active for navigation 
   state = { home: true }
   // set specifics for <head>
-  head = { title: "Home - Week 1" }
+  head = { title: "Home" }
   // pass object to to render in "index"
   res.render('index', { state, head });
   // send this to terminal where node app is running
@@ -63,6 +63,13 @@ app.get('/rankings', (req, res) => {
   head = { title: 'Rankings' };
   res.render('rankings', { state, head });
   console.log('rankings')
+});
+
+// responsive example route
+app.get('/responsiveexample', (req, res) => {
+  const state = { responsive: true };
+  const head = { title: 'Responsive Example - AniRank' };
+  res.render('responsiveexample', { state, head });
 });
 
 
