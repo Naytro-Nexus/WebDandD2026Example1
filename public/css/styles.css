@@ -640,3 +640,40 @@ tr:hover td {
     position: relative;
     z-index: 1;
 }
+
+
+/* Resposive Example */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.card {
+  width: calc(100% - 30px);
+  margin: 15px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .card {
+    width: calc(50% - 30px);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .card {
+    width: calc(33.333% - 30px);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-image {
+  height: 90%;
+}
