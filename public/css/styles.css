@@ -648,6 +648,14 @@ tr:hover td {
   flex-wrap: wrap;
 }
 
+.card-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #f0ede8;
+    margin-bottom: 13px;
+}
+
 
 
 .card {
